@@ -1,0 +1,67 @@
+{
+    "name": "Main",
+    "parameters": {},
+    "services": {
+        "postgres": {
+            "command": "",
+            "env_variables": {
+                "POSTGRES_DB": "jaffle_shop",
+                "POSTGRES_HOST_AUTH_METHOD": "trust"
+            },
+            "image": "postgres",
+            "name": "postgres",
+            "scope": [
+                "interactive",
+                "noninteractive"
+            ]
+        }
+    },
+    "settings": {
+        "auto_eviction": false,
+        "data_passing_memory_size": "1GB"
+    },
+    "steps": {
+        "1b18d7b6-fb1a-456f-b69e-67218c3d515b": {
+            "environment": "b6661754-63e1-4e16-b2ed-1a0f0d50c58c",
+            "file_path": "dbt-run.ipynb",
+            "incoming_connections": [],
+            "kernel": {
+                "display_name": "Python 3",
+                "name": "python"
+            },
+            "meta_data": {
+                "hidden": false,
+                "position": [
+                    190.5,
+                    151.5
+                ]
+            },
+            "parameters": {},
+            "title": "Run dbt",
+            "uuid": "1b18d7b6-fb1a-456f-b69e-67218c3d515b"
+        },
+        "452e665a-0bc7-422b-8f5b-bf22fa6cb303": {
+            "environment": "b6661754-63e1-4e16-b2ed-1a0f0d50c58c",
+            "file_path": "run-python.ipynb",
+            "incoming_connections": [
+                "1b18d7b6-fb1a-456f-b69e-67218c3d515b"
+            ],
+            "kernel": {
+                "display_name": "Python 3",
+                "name": "python"
+            },
+            "meta_data": {
+                "hidden": false,
+                "position": [
+                    461.5,
+                    151.5
+                ]
+            },
+            "parameters": {},
+            "title": "Run Python",
+            "uuid": "452e665a-0bc7-422b-8f5b-bf22fa6cb303"
+        }
+    },
+    "uuid": "7b21ba4a-a18e-4dc7-a23c-37136d125695",
+    "version": "1.0.0"
+}
