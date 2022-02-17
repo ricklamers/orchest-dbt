@@ -1,5 +1,7 @@
 ### Orchest + dbt
 
+[![Open in Orchest](https://github.com/orchest/orchest-examples/raw/main/imgs/open_in_orchest.svg)](https://cloud.orchest.io/?import_url=your-repo-url)
+
 `dbt` is an excellent tool to help you run EL(T) transforms on your data warehouse (Snowflake, Postgres, Redshift, BigQuery).
 
 It can be combined with Python/R/Julia easily using Orchest pipelines.
